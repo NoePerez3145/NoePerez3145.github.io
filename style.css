@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.inicio {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffffbd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titulo1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.opciones {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffffff63;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.opciones:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.opciones label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.opciones select {
+    flex: 2;
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.info {
+    font-weight: bold;
+    color: #666;
+}
+
+.escribe input[type="text"],
+.gas input[type="checkbox"],
+.opciones select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 0px solid #ffffff00;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.gas input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[class="button"] {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 40px; /* Ajuste el valor del margen superior según sea necesario */
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+}
+
+input[class="button"]:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+
+input[type="datetime-local"],
+.opciones select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 0px solid #ce121200;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.gas {
+    margin-top: 10px;
+}
+
+.comentario {
+    font-weight: bold;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 0px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #1b262c;
+    
+    margin: 0;
+    background-image: url(a2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}

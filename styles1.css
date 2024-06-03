@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+
+    margin: 0;
+    background-image: url(a2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Container Styles */
+.container {
+    background-color: #ffffffa2;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading Styles */
+.container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Buttons Container Styles */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button Styles */
+.buttons button {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0 10px;
+}
+
+.buttons button:hover {
+    transform: translateY(-2px);
+}
+
+.buttons button#back {
+    background-color: #fffb09;
+    color: rgb(0, 0, 0);
+}
+
+.buttons button#back:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.buttons button#logout {
+    background-color: #0004ff;
+    color: white;
+}
+
+.buttons button#logout:hover {
+    background-color: #ffffff;
+    color: #0004ff;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

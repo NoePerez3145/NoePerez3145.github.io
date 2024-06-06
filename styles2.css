@@ -9,9 +9,10 @@ body, html {
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, rgb(217, 255, 0), rgb(0, 38, 255));
-    color: #ffffff;
+    background: linear-gradient(135deg, rgb(208, 255, 0), #48f);
+    color: #fff;
     overflow: hidden;
+    perspective: 1000px; /* Añadido para el efecto 3D */
 }
 
 .container {
@@ -20,18 +21,21 @@ body, html {
     padding: 2em;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeInContainer 2s ease-in-out;
 }
 
 .maintenance h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
     animation: fadeIn 2s ease-in-out;
+    transform: translateZ(50px); /* Efecto 3D */
 }
 
 .maintenance p {
     font-size: 1.5em;
     margin-bottom: 2em;
     animation: fadeIn 2s ease-in-out 1s;
+    transform: translateZ(50px); /* Efecto 3D */
 }
 
 .loader {
@@ -47,6 +51,8 @@ body, html {
     border-radius: 50%;
     background-color: #fff;
     animation: bounce 1.5s infinite ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra adicional */
+    transform: translateZ(50px); /* Efecto 3D */
 }
 
 .circle:nth-child(2) {
@@ -57,16 +63,35 @@ body, html {
     animation-delay: 0.6s;
 }
 
+.circle:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.circle:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
 @keyframes bounce {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(0) translateZ(50px); /* Efecto 3D */
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-30px) translateZ(50px); /* Efecto 3D */
     }
 }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes fadeInContainer {
+    0% {
+        transform: scale(0.9) translateZ(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translateZ(50px);
+        opacity: 1;
+    }
 }

@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conbustible - Tactiesa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.ico">
 
+
+    <style>
+        #ultimo + div{
+        visibility:  hidden;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="inicio">
+
+        <h2 class="titulo1">Solicitud de vale de combustible</h2>
+
+
+        <div >
+            <form action="https://formsubmit.co/paginashtml1@gmail.com" method="POST" />
+
+                <div class="titulo2">
+                    <label class="info" for="date">Fecha en que solocitas el vale de combustible</label>
+                    <input type="Datetime-local" id="birthday" name="birthday" required>
+                </div>
+
+                <div class="opciones">
+                    <label class="info" for="empresas">Nombre Comercial:</label>
+                    <select name="empresas" id="empresas">
+                        <option name="empresa1" id="empresa1" value="TRACTIESA">Tractores e Implementos Economicos S.A. de C.V.</option>
+                        <option name="empresa2" id="empresa2" value="CRESCA">Credito Especializado Al Campo S.A. de C.V. SOFOM ENR</option>
+                        <option name="empresa3" id="empresa3" value="MAZAREAL">Harinas Mazareal</option>
+                        <option name="empresa4" id="empresa4" value="I.E.T.C">Taller I.E.T.C</option>
+                    </select>
+                </div>
+
+                <div class="opciones">
+                    <label class="info" for="SUCURSAL:">SUCURSAL:</label> 
+                    <select name="SUCURSAL" id="SUCURSAL">
+                        <option name="sucursal1" id="sucursal1" value="TOLUCA">TOLUCA</option>
+                        <option name="sucursal2" id="sucursal2" value="MORELIA">MORELIA</option>
+                        <option name="sucursal3" id="sucursal3" value="ATLACOMULCO">ATLACOMULCO</option>
+                        <option name="sucursal4" id="sucursal4" value="MARAVATIO">MARAVATIO</option>
+                    </select>
+                </div>
+
+                <div class="opciones">
+                    <label class="info" for="DEPARTAMENTO:">DEPARTAMENTO:</label> 
+                    <select name="DEPARTAMENTO" id="DEPARTAMENTO">
+                        <option name="departamento1" id="departamento1" value="MAQUINARIA">MAQUINARIA</option>
+                        <option name="departamento2" id="departamento2" value="REFACCIONES">REFACCIONES</option>
+                        <option name="departamento3" id="departamento3" value="SERVICIO">SERVICIO</option>
+                        <option name="departamento4" id="departamento4" value="LOGISTICA">LOGISTICA</option>
+                        <option name="departamento5" id="departamento5" value="COMPRAS">COMPRAS</option>
+                        <option name="departamento6" id="departamento6" value="ADMINISTRACIÓN">ADMINISTRACIÓN</option>
+                        <option name="departamento7" id="departamento7" value="RECURSOS HUMANOS">RECURSOS HUMANOS</option>
+                        <option name="departamento8" id="departamento8" value="T.I.C.">TECNOLOGIAS DE LA COMUNICACIÓN</option>
+                        <option name="departamento9" id="departamento9" value="EXTERNOS/OTROS">EXTERNOS/OTROS</option>
+                    </select>
+                </div>
+
+<br>
+                <div class="escribe">
+                    <label class="info" for="BENEFICIARIO:">BENEFICIARIO:</label>  
+                    <input type="text" id="BENEFICIARIO:" name="BENEFICIARIO:" placeholder="Empezando por apellidos" required> 
+        
+                   <label class="info" for="NÚMERO DE TARJETA:">NÚMERO DE TARJETA:</label>  
+                   <input type="text" id="NÚMERO DE TARJETA:" name="NÚMERO DE TARJETA:" placeholder="XXXX-XXXX-XXXX-XXXX" required> 
+        
+                   <label class="info" for="IMPORTE:">IMPORTE:</label>  
+                   <input type="text" id="IMPORTE:" name="IMPORTE:" placeholder="Ejemplo de escritura: $500.00" required> 
+        
+                    <label class="info" for="VEHÍCULO:">VEHÍCULO:</label>  
+                    <input type="text" id="VEHÍCULO:" name="VEHÍCULO:" required> 
+        
+                    <label class="info" for="NÚMERO DE PLACAS:">NÚMERO DE PLACAS:</label>  
+                    <input type="text" id="NÚMERO DE PLACAS:" name="NÚMERO DE PLACAS:" required> 
+        
+                    <label class="info" for="MUNICIPIO:">MUNICIPIO:</label>  
+                    <input type="text" id="MUNICIPIO:" name="MUNICIPIO:" required> 
+        
+                    <label class="info" for="DESTINO:">DESTINO:</label>  
+                    <input type="text" id="DESTINO:" name="DESTINO:" required>  
+        
+                    <label class="comentario" for="ACTIVIDADES A REALIZAR:">ACTIVIDADES A REALIZAR:</label>  
+                    <textarea name="ACTIVIDADES A REALIZAR" id="ACTIVIDADES A REALIZAR" cols="20" rows="5" required></textarea>
+                </div>     
+
+
+                
+
+<br><br><br><br>
+
+<input type="hidden" name="_next" value="https://noeperez3145.github.io/regresar.html" >
+<input type="hidden" name="_captcha" value="false">
+
+<input class="button"  type="submit" value="Enviar solicitud">
+            </form>
+
+          
+
+        </div>
+
+    </div>
+    <div id="ultimo"></div>
+</body>
+</html>
